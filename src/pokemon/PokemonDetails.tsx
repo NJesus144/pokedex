@@ -46,7 +46,9 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
   const data = selectedPokemonDetails;
   return (
     <div className="p-8 ">
+     <div className="flex items-center justify-center flex-col">
       <h1 className=" styleCss text-center text-4xl uppercase">{name}</h1>
+     </div>
       <div className=" sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl  m-auto ">
         <div className=" flex h-12  items-center md:max-w-2xl lg:max-w-4xl justify-between m-auto">
           <button
@@ -82,12 +84,12 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
             <div className=" styleCss flex">
               {" "}
               {data?.types.map((type) => (
-                <div className=" styleCss text-2xl mr-2 text-white mt-4 mb-20 bg-gray-500 px-4 shadow-lg shadow-gray-500/50 capitalize">
+                <div className=" styleCss text-2xl mr-2 text-white mt-4 mb-10 bg-gray-500 px-4 shadow-lg shadow-gray-500/50 capitalize">
                   {type.type.name}
                 </div>
               ))}
             </div>
-
+            <h1 className=" mb-10 text-4xl"> Nº{data?.id}</h1> 
             <div className=" styleCss text-2xl">Abilities</div>
             <div className=" styleCss flex-wrap flex">
               {data?.abilities.map((abilities) => (
