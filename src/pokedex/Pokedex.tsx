@@ -36,9 +36,7 @@ export const Pokedex: React.FC<PokedexProps> = () => {
 
  const pagePokemon = async ()=> {
    try{
- 
      const pokeData = await getPokemonsPage(itensPerPage, itensPerPage * page);
-     console.log(pokeData);
      const promises = pokeData?.data.results.map(async(pokemon: Species)=>{
        return await getPokemonData(pokemon.url)
      })
@@ -91,12 +89,15 @@ const handleBackButton = () => {
                     <div className="h-2 bg-black flex items-center justify-center rounded-r-sm">
                       <div className="h-8 w-8 bg-white border-black border-4 rounded-2xl"></div>
                     </div>
-                       <div className="flex relative  p-2 items-center mt-2 justify-end mr-96">                        
-                          <button onClick={pushFavorites} className="styleCss p-2  rounded-2xl">Favorites ❤️</button>         
-                          <div className="absolute top-2 right-1   w-5 h-5 flex items-center justify-center rounded-xl">
-                          {favoriteCount  > 0?favoriteCount: '' }
-                          </div> 
-                       </div>
+                      
+                        <div className="flex relative  p-2 items-center mt-2 justify-end md:mr-32 mr- lg:mr-96 ">                        
+                            <button onClick={pushFavorites} className="styleCss p-2  rounded-2xl">Favorites ❤️</button>         
+                            <div className="absolute top-2 right-1   w-5 h-5 flex items-center justify-center rounded-xl">
+                            {favoriteCount  > 0?favoriteCount: '' }
+                            </div> 
+                        </div>
+                       
+                      
                   </div>
               
             </div>
@@ -124,7 +125,7 @@ const handleBackButton = () => {
         
 
           <div  className=" sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mt-4 m-auto ">   
-              <div  className="grid sm:grid-cols-1 gap-2 md:grid-cols-2  xl:grid-cols-3">
+              <div  className="grid sm:grid-cols-1 gap-4 md:grid-cols-2  xl:grid-cols-3">
               {pokemons.map((pokemon) => (         
               <PokedexCard 
               pokemon={pokemon}

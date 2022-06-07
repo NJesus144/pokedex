@@ -9,15 +9,12 @@ import './style.css';
 interface PokedexCardProps {
     pokemon: PokemonDetail;
 
-   
 }
 
 export const PokedexCard: React.FC<PokedexCardProps> = ({pokemon}) => {
 const {setFavorites, favorites} = useContext(FavoriteContext)
 const navigate = useNavigate()     
-// const heart = favorites.includes(pokemon) ?  "❤️" :"🖤";
-// const heartBlack = 
-// "❤️" :"🖤"
+
 const icon = "❤️"
 const icon2 = "🖤"
 function handleClick() {
@@ -49,7 +46,7 @@ const isFavorite = favorites.some((poke)=> poke.name === pokemon.name)
                       <Icon icon={isFavorite ?  icon: icon2} />
                     </div>
             </div>
-        </div>
+         </div>
 
 
        </div>

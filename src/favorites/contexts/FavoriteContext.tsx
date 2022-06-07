@@ -10,8 +10,11 @@ export const FavoriteContext = React.createContext<FavoriteContextProps>({
     favorites: [],
     setFavorites: () => console.warn(`setFavorites is not ready`)
 })
+interface FavoriteProviderProps {
+    children: React.ReactElement<any, string | React.JSXElementConstructor<any>> | null
+}
 
-export const FavoriteProvider: React.FC = ({ children }) => {
+export const FavoriteProvider: React.FC<FavoriteProviderProps> = ({ children }) => {
     const [favorites, setFavorites] = useState<PokemonDetail[]>([]);
     return (
         <FavoriteContext.Provider value={{

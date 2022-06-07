@@ -2,22 +2,22 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { PokemonDetail } from "./interfaces/PokemonDetail";
 import { getPokemonDetails } from "./services/getPokemonDetails";
-import "./style.css";
+import "./styleFont.css";
 import BarProgress from "./BarProgress";
 import { FavoriteContext } from "../favorites/contexts/FavoriteContext";
 import Icon from "../pokedex/components/Icon";
 
-interface PokemonDetailsProps { }
+interface PokemonDetailsProps {}
 
 export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
+  
   const { favorites, setFavorites } = useContext(FavoriteContext);
-  const [selectedPokemonDetails, setSelectedPokemonsDetails] = useState<
-    PokemonDetail | undefined
-  >(undefined);
+  const [selectedPokemonDetails, setSelectedPokemonsDetails] = useState<PokemonDetail | undefined>(undefined);
   const { name } = useParams();
   const icon = "❤️";
   const icon2 = "🖤";
   const navigate = useNavigate();
+  
   useEffect(() => {
     if (!name) return;
     getPokemonDetails(name).then((response) =>
@@ -38,10 +38,9 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
       favorites.filter((poke) => poke.name !== selectedPokemonDetails.name)
     );
   };
-  if (!selectedPokemonDetails) return;
-  const isFavorite = favorites.some(
-    (poke) => poke.name === selectedPokemonDetails.name
-  );
+
+  
+  const isFavorite = favorites.some((poke) => poke.name === selectedPokemonDetails?.name);
 
   const data = selectedPokemonDetails;
   return (
@@ -59,8 +58,8 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
           </button>
           <div className="styleCss flex items-center justify-center ">
             {isFavorite
-              ? `Remove to Favorite Pokémons`
-              : "Add To Favorite Pokémons"}
+              ? `Remove from favorite Pokémons`
+              : "Add to favorite Pokémons"}
             <div
               onClick={() =>
                 isFavorite
