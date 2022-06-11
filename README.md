@@ -2,7 +2,13 @@
 # pokedex
 ![pokedex](https://user-images.githubusercontent.com/94402903/173207150-e90ed556-df54-460f-9fe2-63d14f86e9ac.png)
 <h1>Pokedex</h1>
-
+<p align="center">
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/NJesus144/pokedex" />
+<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/NJesus144/pokedex" />
+<img alt="" src="https://img.shields.io/github/repo-size/NJesus144/pokedex" />
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/NJesus144/pokedex" />
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/NJesus144/pokedex" />
+</p>
 
 <p align = "center">
 <a href="#sobre">Sobre</a> •
@@ -15,21 +21,12 @@
 
 ![pokedex](https://user-images.githubusercontent.com/94402903/173207422-7fe00014-1300-4c1d-acfb-18cabc7d0441.gif)
 
-<p align="center">
-<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/NJesus144/pokedex" />
-<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/NJesus144/pokedex" />
-<img alt="" src="https://img.shields.io/github/repo-size/NJesus144/pokedex" />
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/NJesus144/pokedex" />
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/NJesus144/pokedex" />
-</p>
-
-<a href="https://pokedex-generation.netlify.app/"><button background ="#069cc2", border-radius= "6px", padding ="15px", cursor= "pointer"; color: #fff; border: none; font-size: 16px;">Teste Aqui</button></a>
 
 # Tecnologias
--[TypeScript](https://www.typescriptlang.org/)
--[React](https://pt-br.reactjs.org/)
--[TailwindCSS](https://tailwindcss.com/)
--[Nodejs](https://node.js.org/en)
+•[TypeScript](https://www.typescriptlang.org/)
+•[React](https://pt-br.reactjs.org/)
+•[TailwindCSS](https://tailwindcss.com/)
+•[Nodejs](https://node.js.org/en)
 
 Pré-requisitos
 Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/).
