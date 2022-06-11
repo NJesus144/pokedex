@@ -1,5 +1,4 @@
 
-# pokedex
 ![pokedex](https://user-images.githubusercontent.com/94402903/173207150-e90ed556-df54-460f-9fe2-63d14f86e9ac.png)
 <h1>Pokedex</h1>
 
