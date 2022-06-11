@@ -20,7 +20,6 @@
 # Sobre
 <p>Consumindo dados da PokeApi utilizando React</p>
 
-![pokedex](https://user-images.githubusercontent.com/94402903/173207422-7fe00014-1300-4c1d-acfb-18cabc7d0441.gif)
 
 
 # Tecnologias
