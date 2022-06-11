@@ -8,6 +8,7 @@ interface FavoriteContextProps {
 }
 export const FavoriteContext = React.createContext<FavoriteContextProps>({
     favorites: [],
+    
     setFavorites: () => console.warn(`setFavorites is not ready`)
 })
 interface FavoriteProviderProps {

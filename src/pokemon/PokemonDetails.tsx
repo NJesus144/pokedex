@@ -6,6 +6,7 @@ import "./styleFont.css";
 import BarProgress from "./BarProgress";
 import { FavoriteContext } from "../favorites/contexts/FavoriteContext";
 import Icon from "../pokedex/components/Icon";
+import styles from '../../styles/Pokemon.module.css'
 
 interface PokemonDetailsProps {}
 
@@ -44,19 +45,19 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
 
   const data = selectedPokemonDetails;
   return (
-    <div className="p-8 ">
-     <div className="flex items-center justify-center flex-col">
+    <div className="p-2">
+     <div>
       <h1 className=" styleCss text-center text-4xl uppercase">{name}</h1>
      </div>
-      <div className=" sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl  m-auto ">
+      <div >
         <div className=" flex h-12  items-center md:max-w-2xl lg:max-w-4xl justify-between m-auto">
           <button
-            className="border-0 p-1 px-6  bg-sky-600 text-white font-bold rounded-xl"
+            className="border-0 p-1 px-6  bg-sky-600 text-white font-bold rounded-xl xs:mr-4 xs:mt-4 sm:mr-0 sm:mt-0"
             onClick={handleBackButton}
           >
             Go Back
           </button>
-          <div className="styleCss flex items-center justify-center ">
+          <div className="styleCss flex items-center justify-center xs:mt-4 sm:mt-0">
             {isFavorite
               ? `Remove from favorite Pokémons`
               : "Add to favorite Pokémons"}
@@ -72,24 +73,24 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center  justify-around max-w-4xl m-auto xs:flex-col sm:flex-row">
           <img
-            className=" sm:w-2/4"
+            className="  xs:w-5/6 xs:mt-4 sm:w-6/12"
             src={data?.sprites.other?.["official-artwork"].front_default}
             alt=""
           />
           <div>
-            <div className="styleCss mt-2 text-2xl">Type</div>
-            <div className=" styleCss flex">
+            <div className="styleCss mt-2 text-2xl mr-2">Type</div>
+            <div className=" styleCss flex ">
               {" "}
               {data?.types.map((type) => (
-                <div className=" styleCss text-2xl mr-2 text-white mt-4 mb-10 bg-gray-500 px-4 shadow-lg shadow-gray-500/50 capitalize">
+                <div className=" styleCss text-2xl mr-8 text-white mt-4 mb-10 bg-gray-500 px-4 shadow-lg shadow-gray-500/50 capitalize ">
                   {type.type.name}
                 </div>
               ))}
             </div>
-            <h1 className=" mb-10 text-4xl"> Nº{data?.id}</h1> 
-            <div className=" styleCss text-2xl">Abilities</div>
+            <h1 className=" mb-10 text-4xl mr-2"> Nº{data?.id}</h1> 
+            <div className=" styleCss text-2xl mr-8">Abilities</div>
             <div className=" styleCss flex-wrap flex">
               {data?.abilities.map((abilities) => (
                 <div className="mr-2 text-2xl mt-4 mb-4 text-white bg-violet-500 px-4 shadow-lg shadow-violet-500/50  capitalize">
@@ -100,10 +101,10 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
             </div>
           </div>
         </div>
-        <div className=" sm:max-w-md m-auto md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl ">
+        <div>
           {data?.stats.map((stat) => (
-            <div className="  justify-between max-w-4xl m-auto capitalize">
-              <div className="styleCss  mt-2 mb-2">
+            <div className="  justify-between max-w-4xl m-auto capitalize ">
+              <div className="styleCss   mb-2">
                 <BarProgress
                   statsName={stat.stat.name}
                   statsBase={stat.base_stat}

@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import {  useNavigate } from "react-router-dom";
 import { FavoriteContext } from "./FavoriteContext";
 import PokedexCard from "../../pokedex/components/PokedexCard";
+import { PokemonDetail } from "../../pokemon/interfaces/PokemonDetail";
 
 
 
@@ -12,9 +13,14 @@ export const Pokedex: React.FC<PokedexProps> = () => {
   const navigate = useNavigate();
   const {favorites} = useContext(FavoriteContext);
 
+  
 //    useEffect(() => {
 //   listPokemon().then((response) => setPokemons(response.results));
 //  }, []);
+
+
+
+
 const handleBackButton = () => {
   navigate(-1)
 }
@@ -33,7 +39,7 @@ const handleBackButton = () => {
                   </div>           
             </div>
           <div  className=" sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mt-4 m-auto ">   
-              <div  className="grid sm:grid-cols-1 gap-2 md:grid-cols-2  xl:grid-cols-3">
+              <div  className="grid sm:grid-cols-1 gap-4 md:grid-cols-2  xl:grid-cols-3">
               {favorites?.map((pokemon) => (         
               <PokedexCard 
               pokemon={pokemon}
