@@ -2,6 +2,7 @@
 
 ![pokedex](https://user-images.githubusercontent.com/94402903/173207150-e90ed556-df54-460f-9fe2-63d14f86e9ac.png)
 <h1>Pokedex</h1>
+<p>[![Build Status](https://badges.netlify.com/api/https://pokedex-generation.netlify.app/.svg?branch=master)](https://app.netlify.com/sites/site-name/deploys)</p>
 <p align="center">
 <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/NJesus144/pokedex" />
 <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/NJesus144/pokedex" />
