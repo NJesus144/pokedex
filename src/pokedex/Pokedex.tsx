@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import {PokemonListInterface,listPokemon,} from "../pokemon/services/listPokemons";
+import {listPokemon,} from "../pokemon/services/listPokemons";
 import { PokemonDetail, Species } from "../pokemon/interfaces/PokemonDetail";
 import {  useNavigate } from "react-router-dom";
 import PokedexCard from "./components/PokedexCard";
@@ -22,7 +22,6 @@ export const Pokedex: React.FC<PokedexProps> = () => {
   const [totalPages, setTotalPages] = useState(0);
   const navigate = useNavigate();
   const {favorites} = useContext(FavoriteContext);
-  const [loading, setLoading] = useState(true)
   const { data } = useQuery(`listPokemon`, listPokemon);
   const favoriteCount = favorites.length
 

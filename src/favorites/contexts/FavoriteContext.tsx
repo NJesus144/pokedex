@@ -1,4 +1,4 @@
-import React, { Children, useState } from 'react';
+import React, { useState } from 'react';
 import { PokemonDetail } from '../../pokemon/interfaces/PokemonDetail';
 
 interface FavoriteContextProps {

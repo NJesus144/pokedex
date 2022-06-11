@@ -6,7 +6,7 @@ import "./styleFont.css";
 import BarProgress from "./BarProgress";
 import { FavoriteContext } from "../favorites/contexts/FavoriteContext";
 import Icon from "../pokedex/components/Icon";
-import styles from '../../styles/Pokemon.module.css'
+
 
 interface PokemonDetailsProps {}
 
