@@ -30,8 +30,8 @@
 •[Nodejs](https://node.js.org/en)
 
 Pré-requisitos
-Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/).
-Rodando a aplicação
+<p>Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/). </p>
+<p>Rodando a aplicação</p>
 
 ```bash
 # Clone este repositório
