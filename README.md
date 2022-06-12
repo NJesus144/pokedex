@@ -30,7 +30,7 @@
 •[Nodejs](https://node.js.org/en)
 
 <p>Pré-requisitos</p>
->Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/). 
+Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/). 
 <p>Rodando a aplicação</p>
 
 ```bash
