@@ -29,9 +29,9 @@
 •[TailwindCSS](https://tailwindcss.com/)
 •[Nodejs](https://node.js.org/en)
 
-<p>Pré-requisitos</p>
+Pré-requisitos
 Antes de começar, você precisa ter instalado em sua máquina as seguintes ferraments [Git](https://git-scm.com), [Node.js](https://node.js.org/en). Além de um editor de texto para trabalhar com o código como o [VSCode](https://code.visualstudio.com/). 
-<p>Rodando a aplicação</p>
+Rodando a aplicação
 
 ```bash
 # Clone este repositório
