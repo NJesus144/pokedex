@@ -34,7 +34,7 @@ const handleBackButton = () => {
                       <div className="h-8 w-8 bg-white border-black border-4 rounded-2xl"></div>
                     </div>  
                     <div className="lg:max-w-4xl m-auto">
-                       <button className="border-0  mt-2 p-1 px-6  bg-sky-600 text-white font-bold rounded-xl" onClick={handleBackButton}>Go Back</button> 
+                       <button className="border-0  mt-2 p-1 px-6  bg-sky-600 text-white font-bold rounded-xl" onClick={handleBackButton}>Back</button> 
                         </div>                
                   </div>           
             </div>

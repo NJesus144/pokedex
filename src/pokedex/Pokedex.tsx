@@ -113,7 +113,7 @@ const handleBackButton = () => {
           {notFound? (
           <div className="flex flex-col items-center justify-center mt-4">
             We found no results for your search.
-            <button className="border-0 p-1 px-6 mt-4 bg-sky-600 text-white font-bold rounded-xl" onClick={handleBackButton}>Go Back</button>
+            <button className="border-0 p-1 px-6 mt-4 bg-sky-600 text-white font-bold rounded-xl" onClick={handleBackButton}>Back</button>
           </div>
         ) : ( 
         

@@ -55,7 +55,7 @@ export const PokemonDetails: React.FC<PokemonDetailsProps> = () => {
             className="border-0 p-1 px-6  bg-sky-600 text-white font-bold rounded-xl xs:mr-4 xs:mt-4 sm:mr-0 sm:mt-0"
             onClick={handleBackButton}
           >
-            Go Back
+             Back
           </button>
           <div className="styleCss flex items-center justify-center xs:mt-4 sm:mt-0">
             {isFavorite
