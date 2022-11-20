@@ -4,7 +4,7 @@
 <h1>Pokedex</h1>
 
 
-<a href="https://pokedex-generation.netlify.app/><p align="center">
+<a href="https://pokedex-generation.netlify.app"> <p align="center">
  <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
 </p></a>
 
