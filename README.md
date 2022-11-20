@@ -6,8 +6,10 @@
 
  <p align="center">
  <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
- <a href="https://pokedex-generation.netlify.app"></a>
 </p>
+<p align="center">
+  <a href="https://pokedex-generation.netlify.app"></a>
+ </p>
 
 <p align="center">
 <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/NJesus144/pokedex" />
