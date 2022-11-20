@@ -4,11 +4,8 @@
 <h1>Pokedex</h1>
 
 
- <p align="center">
- <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
-</p>
 <p align="center">
-  <a href="https://pokedex-generation.netlify.app"><img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"></a>
+  <a href="https://pokedex-generation.netlify.app" target="_blank"><img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"></a>
  </p>
 
 <p align="center">
